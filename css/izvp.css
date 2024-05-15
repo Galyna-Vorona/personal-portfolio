@@ -1,38 +1,29 @@
 @import url("./reset.css");
 @import url("./header.css");
+@import url("./footer.css");
 
-@media screen and (min-width: 768px) {
-  .header-icon {
-    width: 50px;
-  }
+.hero {
+  background-image: url("../img/subject/izvp.webp");
+  padding: 400px 0;
+  display: flex;
+  justify-content: center;
+}
 
-  .teacher-container {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
+.hero-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  color: #f825ce;
+  text-shadow: 1px 4px 0px black;
+  background-color: #2e0a57;
+  padding: 30px;
+  border-radius: 18px;
+}
 
-    gap: 24px;
-  }
-  .teacher-img {
-    margin: 0;
-    height: 400px;
-  }
-
-  .teacher-info {
-    box-shadow: none;
-    gap: 20px;
-    justify-content: center;
-  }
-
-  .teacher-name {
-    font-size: 24px;
-    font-weight: 500;
-    text-align: center;
-  }
-
-  .teacher-text {
-    font-size: 20px;
-  }
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .calendar {
@@ -41,40 +32,66 @@
   flex-direction: column;
   align-items: center;
 }
-.calendar-container {
-  display: flex;
-  gap: 24px;
+
+.calendar-link {
+  margin: 0 auto;
 }
+
 .calendar-title {
   text-align: center;
   margin-bottom: 20px;
 }
-.calendar-link {
-}
+
 .calendar-list {
   display: flex;
   flex-direction: column;
   gap: 10px;
   justify-content: center;
 }
+
 .calendar-list-item {
-  font-size: 24px;
+  font-family: "Ubuntu Sans Mono", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.calendar-list-span {
+  font-family: "Ubuntu Sans Mono", sans-serif;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 60px;
+  }
+
+  .container {
+    max-width: 768px;
+  }
+
+  .calendar-title {
+    font-size: 40px;
+  }
+
+  .calendar-container {
+    flex-direction: row;
+  }
+
+  .table-title {
+    font-size: 40px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-  .header-list {
-    display: flex;
-    gap: 24px;
-  }
-  .header-button {
-    display: none;
+  .container {
+    max-width: 1199px;
   }
 
-  .header-item-menu {
-    position: absolute;
-    top: 30px;
-    display: none;
-    flex-direction: column;
-    gap: 24px;
+  .hero-title {
+    font-size: 80px;
+  }
+
+  .calendar-list-item {
+    font-size: 24px;
   }
 }
